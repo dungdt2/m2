@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="DungDt_Faq::faqs" title="FAQs" sortOrder="51">
+                    <resource id="DungDt_Faq::faq" title="Manage Faq" sortOrder="10"/>
+                    <resource id="DungDt_Faq::faq_delete" title="Delete Faq" sortOrder="50"/>
+                    <resource id="DungDt_Faq::faq_configuration" title="Configuration" sortOrder="99" />
+                </resource>
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="DungDt_Faq::faq_config" title="FAQ Configuration"/>
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

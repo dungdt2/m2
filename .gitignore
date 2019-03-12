@@ -70,3 +70,4 @@ atlassian*
 /pub
 /var
 /.github
+/app/etc/config.php

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="DungDt_Faq::faqs" title="FAQs" module="DungDt_Faq" sortOrder="51" resource="DungDt_Faq::FAQs"/>
+        <add id="DungDt_Faq::faq" title="Manage Faq" module="DungDt_Faq" sortOrder="10" action="dungdt_faqid/faq/index" resource="DungDt_Faq::faq" parent="DungDt_Faq::faqs"/>
+        <add id="DungDt_Faq::faq_configuration" title="Configuration" module="DungDt_Faq" sortOrder="99" parent="DungDt_Faq::faqs" action="adminhtml/system_config/edit/section/faq" resource="DungDt_Faq::faq_configuration"/>
+    </menu>
+</config>

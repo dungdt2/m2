@@ -1,0 +1,7 @@
+<?php
+/** @var \DungDt\Faq\Block\Faq $block */
+$data = $block->test();
+foreach ($data as $item){
+    echo $item->getQuestion() .'<br />';
+    echo $item->getAnswer().'<br />';
+}
